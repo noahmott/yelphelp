@@ -1,5 +1,5 @@
 <p align='center'>
-<img src="images\yelphellp.png"/>
+<img src="images\yelphellp3.png"/>
 </p>
 
 # YelpHelp
