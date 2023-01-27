@@ -10,7 +10,7 @@ Current as of 01/27/2023
 
 ## Use
 
-'''python
+```python
 import os
 import sys
 
@@ -22,4 +22,4 @@ scraper=YelpHelp()
 
 dataframe=scraper.scrape_data(url='<startingurl>')
 
-'''
+```
