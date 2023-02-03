@@ -1,6 +1,5 @@
 
 from bs4 import BeautifulSoup
-import requests
 import urllib
 from datetime import datetime
 import pandas as pd
@@ -16,6 +15,18 @@ class YelpHelp(ScraperAgent):
     self.scrapertool=ScraperAgent(self.headers)
 
   def scrape_data(self, url, set_range=8, current_date_css_tag='css-chan6m', current_review_css_tag='raw__09f24__T4Ezm'):
+    """Scrapes the Yelp Website for dates and reviews covering a predefined range of pages from 
+    the front page of a business.
+    
+    Parameters:
+      url (str): The URL of the Yelp Homepage for the business
+      set_range (int): How many pages of reviews to obtain
+      current_date_css_tag (str): Yelp rotates the tag for dates occasionally
+      current_review_css_tag (str): Yelp rotates the css tag for reviews occassionally
+
+    Returns:
+      DataFrame: A dataframe of reviews and dates
+    """
     urllist=self.__collect_urls(url, set_range)
     #print(urllist)
     dates2=[]
@@ -54,6 +65,15 @@ class YelpHelp(ScraperAgent):
       
     
   def __collect_urls(self, url, set_range):   
+    """
+    Constructs a list of URL pages to cycle through for scraping.
+    
+    Parameters:
+      set_range (int): range of pages
+
+    Returns:
+      array: A list of URLs
+      """
     print('testing connection....')
     #print(type(self.scrapertool.testconnection(url)))
     if self.scrapertool.testconnection(url).status_code==200:
