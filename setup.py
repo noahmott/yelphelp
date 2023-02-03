@@ -21,7 +21,6 @@ INSTALL_REQUIRES = [
       'requests',
       'urllib',
       'beautifulsoup4',
-      'time',
       'regex'
 ]
 
