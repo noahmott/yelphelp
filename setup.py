@@ -11,7 +11,7 @@ AUTHOR_EMAIL = 'noah.mott1@gmail.com'
 URL = 'https://github.com/noahmott/yelphelp'
 
 LICENSE = 'Apache License 2.0'
-DESCRIPTION = 'Describe your package in one sentence'
+DESCRIPTION = 'A small scraping tool for Yelp'
 LONG_DESCRIPTION = (HERE / "README.md").read_text()
 LONG_DESC_TYPE = "text/markdown"
 
