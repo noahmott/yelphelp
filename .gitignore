@@ -1,6 +1,0 @@
-# .gitignore
-__pycache__/
-dist
-yelphelp.egg-info
-.gitignore
-__init__.py
