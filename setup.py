@@ -19,7 +19,6 @@ INSTALL_REQUIRES = [
       'numpy',
       'pandas',
       'requests',
-      'urllib',
       'beautifulsoup4',
       'regex'
 ]
