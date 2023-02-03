@@ -1,0 +1,7 @@
+numpy
+pandas
+requests
+urllib
+beautifulsoup4
+time
+regex
