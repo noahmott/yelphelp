@@ -1,9 +1,0 @@
-README.md
-setup.py
-utils/__init__.py
-utils/scraperagent.py
-yelphelp.egg-info/PKG-INFO
-yelphelp.egg-info/SOURCES.txt
-yelphelp.egg-info/dependency_links.txt
-yelphelp.egg-info/requires.txt
-yelphelp.egg-info/top_level.txt
