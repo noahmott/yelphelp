@@ -33,7 +33,7 @@ class YelpHelp(ScraperAgent):
     reviews=[]
     for url in urllist:
       #this sleep timer is so the page loads fully on each iteration. js sometimes loads slowly
-      time.sleep(4)
+      time.sleep(10)
       myurl=urllib.request.urlopen(url)
       soup=BeautifulSoup(myurl, 'html.parser')
       dates=soup.find_all('span', class_=current_date_css_tag)
