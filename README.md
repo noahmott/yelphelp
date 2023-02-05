@@ -7,7 +7,7 @@ A simple scraping tool for Yelp.
 
 
 
-## Version 1.0.2
+## Version 1.0.7
 Current as of 02/04/2023
 ## Release Notes
 Added an additional count timer for webpages
