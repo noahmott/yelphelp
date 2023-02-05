@@ -14,7 +14,7 @@ class YelpHelp(ScraperAgent):
   def __init__(self):
     self.scrapertool=ScraperAgent(self.headers)
 
-  def scrape_data(self, url, set_range=8, current_date_css_tag='css-chan6m', current_review_css_tag='raw__09f24__T4Ezm'):
+  def scrape_data(self, url, set_range=8, current_date_css_tag='css-chan6m', current_review_css_tag='raw__09f24__T4Ezm', timer=6):
     """Scrapes the Yelp Website for dates and reviews covering a predefined range of pages from 
     the front page of a business.
     
@@ -33,7 +33,7 @@ class YelpHelp(ScraperAgent):
     reviews=[]
     for url in urllist:
       #this sleep timer is so the page loads fully on each iteration. js sometimes loads slowly
-      time.sleep(10)
+      time.sleep(timer)
       myurl=urllib.request.urlopen(url)
       soup=BeautifulSoup(myurl, 'html.parser')
       dates=soup.find_all('span', class_=current_date_css_tag)
